@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+  <audio controls>
+        <source src="audio/Azerbaycan_Dovlet_Himni_-_National_Anthem_of_Azerbaijan_-_www.BiG.AZ.mp3">
+        <source src="audio/Azerbaycan_Dovlet_Himni_-_National_Anthem_of_Azerbaijan_-_www.BiG.AZ.ogg">
+    </audio>
+<img controls>
+<source src="image/azerbaycan_xeritesi (4).png">
+</img> 
+    <video width="150px" controls>
+
+    <source src="video/scenery_quran1_engli_1717677435378.mp4">
+    </video>
+    <a href="htt"></a>
+
+<input id="playButton" type="button" value="play">
+
+    <audio id="audioElement">
+        <source src="audio/Azerbaycan_Dovlet_Himni_-_National_Anthem_of_Azerbaijan_-_www.BiG.AZ.mp3">
+        <source src="audio/Azerbaycan_Dovlet_Himni_-_National_Anthem_of_Azerbaijan_-_www.BiG.AZ.ogg">
+    </audio> 
+    
+    <script>
+        document.getElementById("playButton").onclick = playSound;
+
+    function playSound() {
+        var music = document.getElementById("audioElement");
+        var button = document.getElementById("playButton");
+        if (music.paused) {
+            music.play();
+            button.value = "stop";
+            
+        }
+        else{
+            music.pause();
+            button.value = "play";
+        }
+    }
+    </script>
+
+    
+
+    <audio controls id="audioElement">
+        <source src="audio/Azerbaycan_Dovlet_Himni_-_National_Anthem_of_Azerbaijan_-_www.BiG.AZ.mp3">
+        <source src="audio/Azerbaycan_Dovlet_Himni_-_National_Anthem_of_Azerbaijan_-_www.BiG.AZ.ogg">
+    </audio> 
+
+
+<input type="button" title="Play form 30 sec" value="30 sec" onclick="playAt(30)">
+<script>
+    function playAt(seconds) {
+        var audio = document.getElementById("audioelement")
+        audio.currentTime = seconds 
+        audio.play();
+        
+    }
+
+</script>
+
+    <input id="stopButton" type="button" value="stop" onclick="stopAudio()">
+
+    <script>
+    function playSound() {
+        var music = document.getElementById("audioElement");
+       music.currentTime = 0;
+       music.pause();
+    }
+    </script>
+<video controls loop poster="image/azerbaycan_xeritesi (4).png"  width="450" style="border: 10px solid rgb(100, 60, 30); cursor: pointer;">
+    <source width="500" src="video/scenery_quran1_engli_1717677435378.mp4">
+
+</video>
+
+</body>
+</html>
